@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>豆丁影视 - 全新观影体验</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://example.com/your-background-image.jpg') no-repeat center/cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            padding: 2rem 1rem;
+            color: white;
+            text-align: center;
+        }
+ 
+        .container {
+            max-width: 600px;
+            width: 100%;
+            position: relative; 
+        }
+ 
+        /* 新增logo样式 */
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .title-group {
+            margin-bottom: 2.5rem;
+            position: relative; 
+        }
+ 
+        .main-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 0.8rem;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .title-group {
+            margin-bottom: 2.5rem;
+        }
+
+        .main-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 0.8rem;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            background: linear-gradient(90deg, #fff 70%, #FFD700 30%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 400px;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-ios {
+            background: #FFD700;
+            color: #1D1D1D;
+        }
+
+        .btn-android {
+            background: #A4C639;
+            color: #FFF;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-icon {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2.2rem;
+            }
+            
+            .btn {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://example.com/your-logo.png" alt="豆丁影视Logo" class="logo">
+        <div class="title-group">
+            <h1 class="main-title">豆丁影视APP</h1>
+            <p class="subtitle">
+                <span class="highlight">创意在线代码运行工具用于在线进行代码测试</span>
+            </p>
+        </div>
+
+        <div class="download-buttons">
+            <a href="https://ios.douyinapp.com" target="_blank" class="btn btn-ios" style="text-decoration: none;">
+                <span class="btn-icon">🍎</span>
+                iOS 下载
+            </a>
+            <a href="https://android.douyinapp.com" target="_blank" class="btn btn-android" style="text-decoration: none;">
+                <span class="btn-icon">🤖</span>
+                安卓下载
+            </a>
+        </div>
+    </div>
+</body>
+</html>
